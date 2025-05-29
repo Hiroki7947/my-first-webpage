@@ -4,41 +4,81 @@
   <meta charset="UTF-8">
   <title>私の最初のホームページ</title>
   <style>
+    /* グラデーション背景 */
     body {
-      background-color: #e0f0ff; /* 薄い青 */
-      color: #333333;            /* 濃い灰色 */
-      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(45deg, #a0c4ff, #e6f7ff); /* 優しい青から薄い水色へ */
+      color: #333333;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
+      overflow: hidden;
     }
 
+    /* 中央のカードデザイン */
     .container {
       background-color: #ffffff;
       padding: 40px;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      text-align: center;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
       max-width: 500px;
       width: 90%;
+      text-align: center;
+      transform: scale(0.9);
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    /* アニメーション：フェードイン */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
 
     h1 {
-      color: #1a1a1a;
-      font-size: 32px;
+      font-size: 36px;
+      color: #2c3e50;
+      letter-spacing: 2px;
       margin-bottom: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     }
 
     p {
-      font-size: 20px;
-      margin: 10px 0;
+      font-size: 18px;
+      margin: 12px 0;
+      color: #555555;
     }
 
     strong {
-      color: #555;
+      color: #3498db;
+      font-weight: 500;
+    }
+
+    /* ボタン風のリンク */
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 18px;
+      background-color: #3498db;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #2980b9;
     }
   </style>
 </head>
@@ -48,6 +88,7 @@
     <p><strong>名前：</strong>髙橋　弘樹</p>
     <p><strong>学科：</strong>応用情報工学科</p>
     <p><strong>趣味：</strong>クイズのみんはや</p>
+    
   </div>
 </body>
 </html>
