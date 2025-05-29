@@ -7,23 +7,47 @@
     body {
       background-color: #e0f0ff; /* 薄い青 */
       color: #333333;            /* 濃い灰色 */
-      font-family: sans-serif;
-      padding: 20px;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       text-align: center;
+      max-width: 500px;
+      width: 90%;
     }
+
     h1 {
-      color: #222222;
+      color: #1a1a1a;
+      font-size: 32px;
+      margin-bottom: 20px;
     }
+
     p {
-      font-size: 18px;
-      line-height: 1.6;
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    strong {
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <h1>ようこそ</h1>
-  <p><strong>名前：</strong>髙橋　弘樹</p>
-  <p><strong>学科：</strong>応用情報工学科</p>
-  <p><strong>趣味：</strong>クイズのみんはや</p>
+  <div class="container">
+    <h1>ようこそ</h1>
+    <p><strong>名前：</strong>髙橋　弘樹</p>
+    <p><strong>学科：</strong>応用情報工学科</p>
+    <p><strong>趣味：</strong>クイズのみんはや</p>
+  </div>
 </body>
 </html>
